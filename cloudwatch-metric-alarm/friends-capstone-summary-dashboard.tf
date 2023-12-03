@@ -80,3 +80,32 @@ resource "aws_cloudwatch_metric_alarm" "friends_capstone_summary_RDS_CPUUtilizat
   comparison_operator = "GreaterThanThreshold"
   treat_missing_data  = "notBreaching"
 }
+
+resource "aws_cloudwatch_metric_alarm" "friends_capstone_summary_WAF_BlockedRequests" {
+  alarm_name          = "friends-capstone-summary-WAF-BlockedRequests"
+  alarm_description   = "This alarm is triggered when the Web Application Firewall (WAF) blocks an elevated number of requests, indicating potential malicious activity or unwanted traffic attempting to access the application."
+  actions_enabled     = true
+
+  alarm_actions       = [
+    "arn:aws:sns:us-west-2:255945442255:Default_CloudWatch_Alarms_Topic",
+    "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+  ]
+
+  metric_name         = "friends-capstone-summary-WAF-BlockedRequests"
+  namespace           = "."
+  statistic           = "Average"
+
+  dimensions = [
+    {
+      name  = "."
+      value = "."
+    }
+  ]
+
+  period              = 300
+  evaluation_periods  = 1
+  datapoints_to_alarm = 1
+  threshold           = 10
+  comparison_operator = "GreaterThanThreshold"
+  treat_missing_data  = "missing"
+}
