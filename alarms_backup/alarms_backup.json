@@ -1,0 +1,1085 @@
+[
+    {
+        "AlarmName": "AWSResilienceHub-ApplicationLoadBalancerElbHttp4xxCountAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-elasticloadbalancing-us-west-2-255945442255-loadbalancer-app-friends-capstone-ecs-shared-alb-c1e262c436e26421",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-ApplicationLoadBalancerElbHttp4xxCountAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-elasticloadbalancing-us-west-2-255945442255-loadbalancer-app-friends-capstone-ecs-shared-alb-c1e262c436e26421",
+        "AlarmDescription": "Alerts when the number of HTTP 4XX server error codes, which originate from the Application Load Balancer, is greater than or equal to the specified threshold",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-06T14:20:52.831000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: no datapoints were received for 5 periods and 5 missing datapoints were treated as [NonBreaching].",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-06T14:21:03.595+0000\",\"unit\":\"Count\",\"statistic\":\"Sum\",\"period\":60,\"recentDatapoints\":[],\"threshold\":100.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-06T14:19:00.000+0000\"},{\"timestamp\":\"2023-12-06T14:18:00.000+0000\"},{\"timestamp\":\"2023-12-06T14:17:00.000+0000\"}]}",
+        "StateUpdatedTimestamp": "2023-12-06T14:21:03.597000+00:00",
+        "MetricName": "HTTPCode_ELB_4XX_Count",
+        "Namespace": "AWS/ApplicationELB",
+        "Statistic": "Sum",
+        "Dimensions": [
+            {
+                "Name": "LoadBalancer",
+                "Value": "app/friends-capstone-ecs-shared-alb/c1e262c436e26421"
+            }
+        ],
+        "Period": 60,
+        "Unit": "Count",
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "Threshold": 100.0,
+        "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-06T14:21:03.597000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-ApplicationLoadBalancerElbHttp5xxCountAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-elasticloadbalancing-us-west-2-255945442255-loadbalancer-app-friends-capstone-ecs-shared-alb-c1e262c436e26421",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-ApplicationLoadBalancerElbHttp5xxCountAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-elasticloadbalancing-us-west-2-255945442255-loadbalancer-app-friends-capstone-ecs-shared-alb-c1e262c436e26421",
+        "AlarmDescription": "Alerts when the number of HTTP 5XX server error codes, which originate from the Application Load Balancer, is greater than or equal to the specified threshold",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-06T14:20:52.588000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: no datapoints were received for 5 periods and 5 missing datapoints were treated as [NonBreaching].",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-06T14:22:25.156+0000\",\"unit\":\"Count\",\"statistic\":\"Sum\",\"period\":60,\"recentDatapoints\":[],\"threshold\":100.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-06T14:20:00.000+0000\"},{\"timestamp\":\"2023-12-06T14:19:00.000+0000\"},{\"timestamp\":\"2023-12-06T14:18:00.000+0000\"}]}",
+        "StateUpdatedTimestamp": "2023-12-06T14:22:25.224000+00:00",
+        "MetricName": "HTTPCode_ELB_5XX_Count",
+        "Namespace": "AWS/ApplicationELB",
+        "Statistic": "Sum",
+        "Dimensions": [
+            {
+                "Name": "LoadBalancer",
+                "Value": "app/friends-capstone-ecs-shared-alb/c1e262c436e26421"
+            }
+        ],
+        "Period": 60,
+        "Unit": "Count",
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "Threshold": 100.0,
+        "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-06T14:22:25.224000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-ApplicationLoadBalancerHealthyHostCountAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-crud-api-tg",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-ApplicationLoadBalancerHealthyHostCountAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-crud-api-tg",
+        "AlarmDescription": "Alerts when the healthy host count is less than or equal to the specified threshold",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-06T14:20:53.118000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: 5 out of the last 5 datapoints were not less than or equal to the threshold (0.0). The most recent datapoints which not crossed the threshold: [4.0 (06/12/23 14:20:00), 4.0 (06/12/23 14:19:00), 4.0 (06/12/23 14:18:00), 4.0 (06/12/23 14:17:00), 4.0 (06/12/23 14:16:00)] (minimum 3 datapoints for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-06T14:22:07.064+0000\",\"startDate\":\"2023-12-06T14:16:00.000+0000\",\"unit\":\"Count\",\"statistic\":\"Maximum\",\"period\":60,\"recentDatapoints\":[4.0,4.0,4.0,4.0,4.0],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-06T14:20:00.000+0000\",\"sampleCount\":2.0,\"value\":4.0},{\"timestamp\":\"2023-12-06T14:19:00.000+0000\",\"sampleCount\":2.0,\"value\":4.0},{\"timestamp\":\"2023-12-06T14:18:00.000+0000\",\"sampleCount\":2.0,\"value\":4.0}]}",
+        "StateUpdatedTimestamp": "2023-12-06T14:22:07.066000+00:00",
+        "MetricName": "HealthyHostCount",
+        "Namespace": "AWS/ApplicationELB",
+        "Statistic": "Maximum",
+        "Dimensions": [
+            {
+                "Name": "LoadBalancer",
+                "Value": "app/friends-capstone-ecs-shared-alb/c1e262c436e26421"
+            },
+            {
+                "Name": "TargetGroup",
+                "Value": "targetgroup/friends-capstone-crud-api-tg/7198b31ca313caf4"
+            }
+        ],
+        "Period": 60,
+        "Unit": "Count",
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "Threshold": 0.0,
+        "ComparisonOperator": "LessThanOrEqualToThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-06T14:22:07.066000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-ApplicationLoadBalancerRejectedConnectionsCountAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-elasticloadbalancing-us-west-2-255945442255-loadbalancer-app-friends-capstone-ecs-shared-alb-c1e262c436e26421",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-ApplicationLoadBalancerRejectedConnectionsCountAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-elasticloadbalancing-us-west-2-255945442255-loadbalancer-app-friends-capstone-ecs-shared-alb-c1e262c436e26421",
+        "AlarmDescription": "Alerts when the number of the connections, which were rejected because the Application Load Balancer had reached its maximum number of connections, is greater than or equal to the specified threshold",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-06T14:20:52.715000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: no datapoints were received for 5 periods and 5 missing datapoints were treated as [NonBreaching].",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-06T14:21:48.452+0000\",\"unit\":\"Count\",\"statistic\":\"Sum\",\"period\":60,\"recentDatapoints\":[],\"threshold\":100.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-06T14:19:00.000+0000\"},{\"timestamp\":\"2023-12-06T14:18:00.000+0000\"},{\"timestamp\":\"2023-12-06T14:17:00.000+0000\"}]}",
+        "StateUpdatedTimestamp": "2023-12-06T14:21:48.453000+00:00",
+        "MetricName": "RejectedConnectionCount",
+        "Namespace": "AWS/ApplicationELB",
+        "Statistic": "Sum",
+        "Dimensions": [
+            {
+                "Name": "LoadBalancer",
+                "Value": "app/friends-capstone-ecs-shared-alb/c1e262c436e26421"
+            }
+        ],
+        "Period": 60,
+        "Unit": "Count",
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "Threshold": 100.0,
+        "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-06T14:21:48.453000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-ApplicationLoadBalancerTargetHttp5xxCountAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-elasticloadbalancing-us-west-2-255945442255-loadbalancer-app-friends-capstone-ecs-shared-alb-c1e262c436e26421",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-ApplicationLoadBalancerTargetHttp5xxCountAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-elasticloadbalancing-us-west-2-255945442255-loadbalancer-app-friends-capstone-ecs-shared-alb-c1e262c436e26421",
+        "AlarmDescription": "Alerts when the number of HTTP 5XX target error codes, which were generated by the targets, is greater than or equal to the specified threshold",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-06T14:20:52.949000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: no datapoints were received for 5 periods and 5 missing datapoints were treated as [NonBreaching].",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-06T14:21:29.660+0000\",\"unit\":\"Count\",\"statistic\":\"Sum\",\"period\":60,\"recentDatapoints\":[],\"threshold\":100.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-06T14:19:00.000+0000\"},{\"timestamp\":\"2023-12-06T14:18:00.000+0000\"},{\"timestamp\":\"2023-12-06T14:17:00.000+0000\"}]}",
+        "StateUpdatedTimestamp": "2023-12-06T14:21:29.661000+00:00",
+        "MetricName": "HTTPCode_Target_5XX_Count",
+        "Namespace": "AWS/ApplicationELB",
+        "Statistic": "Sum",
+        "Dimensions": [
+            {
+                "Name": "LoadBalancer",
+                "Value": "app/friends-capstone-ecs-shared-alb/c1e262c436e26421"
+            }
+        ],
+        "Period": 60,
+        "Unit": "Count",
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "Threshold": 100.0,
+        "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-06T14:21:29.661000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-ApplicationLoadBalancerUnHealthyHostCountAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-crud-api-tg",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-ApplicationLoadBalancerUnHealthyHostCountAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-crud-api-tg",
+        "AlarmDescription": "Alerts when the unhealthy host count is greater than or equal to the specified threshold",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-06T14:20:52.726000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: 1 out of the last 1 datapoints [0.0 (06/12/23 14:19:00)] was not greater than or equal to the threshold (1.0) (minimum 1 datapoint for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-06T14:21:58.759+0000\",\"startDate\":\"2023-12-06T14:19:00.000+0000\",\"unit\":\"Count\",\"statistic\":\"Minimum\",\"period\":60,\"recentDatapoints\":[0.0],\"threshold\":1.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-06T14:19:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0}]}",
+        "StateUpdatedTimestamp": "2023-12-06T14:21:58.760000+00:00",
+        "MetricName": "UnHealthyHostCount",
+        "Namespace": "AWS/ApplicationELB",
+        "Statistic": "Minimum",
+        "Dimensions": [
+            {
+                "Name": "LoadBalancer",
+                "Value": "app/friends-capstone-ecs-shared-alb/c1e262c436e26421"
+            },
+            {
+                "Name": "TargetGroup",
+                "Value": "targetgroup/friends-capstone-crud-api-tg/7198b31ca313caf4"
+            }
+        ],
+        "Period": 60,
+        "Unit": "Count",
+        "EvaluationPeriods": 1,
+        "DatapointsToAlarm": 1,
+        "Threshold": 1.0,
+        "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-06T14:21:58.760000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-LambdaAnomalousDurationCountAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-LambdaAnomalousDurationCountAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
+        "AlarmDescription": "Alarm by AWS Resilience Hub that reports when duration is anomalous with band width 5",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-06T14:03:53.128000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Thresholds Crossed: 2 out of the last 5 datapoints [750.3299999999999 (09/12/23 00:19:00), 765.5849999999999 (09/12/23 00:10:00)] were not less than the lower thresholds [0.0, 0.0] or not greater than the upper thresholds [956.0446842543546, 956.3930777651619] (minimum 3 datapoints for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-09T00:25:06.656+0000\",\"startDate\":\"2023-12-09T00:04:00.000+0000\",\"period\":180,\"recentDatapoints\":[1184.955,null,765.5849999999999,1070.085,null,750.3299999999999],\"recentLowerThresholds\":[0.0,null,0.0,0.0,null,0.0],\"recentUpperThresholds\":[956.4699264497862,null,956.3930777651619,956.149688517688,null,956.0446842543546],\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-09T00:22:00.000+0000\"},{\"timestamp\":\"2023-12-09T00:19:00.000+0000\",\"value\":750.3299999999999,\"threshold\":956.0446842543546},{\"timestamp\":\"2023-12-09T00:10:00.000+0000\",\"value\":765.5849999999999,\"threshold\":956.3930777651619}]}",
+        "StateUpdatedTimestamp": "2023-12-09T00:25:06.658000+00:00",
+        "Dimensions": [],
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "ComparisonOperator": "LessThanLowerOrGreaterThanUpperThreshold",
+        "TreatMissingData": "missing",
+        "Metrics": [
+            {
+                "Id": "ad1",
+                "Expression": "ANOMALY_DETECTION_BAND(m1,5)"
+            },
+            {
+                "Id": "m1",
+                "MetricStat": {
+                    "Metric": {
+                        "Namespace": "AWS/Lambda",
+                        "MetricName": "Duration",
+                        "Dimensions": [
+                            {
+                                "Name": "FunctionName",
+                                "Value": "friends-capstone-ecs-shared-alb-forward-logs"
+                            }
+                        ]
+                    },
+                    "Period": 180,
+                    "Stat": "Average"
+                }
+            }
+        ],
+        "ThresholdMetricId": "ad1",
+        "StateTransitionedTimestamp": "2023-12-09T00:25:06.658000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-LambdaAnomalousInvocationCountAlarm-2020-07-13_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-LambdaAnomalousInvocationCountAlarm-2020-07-13_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
+        "AlarmDescription": "Alarm by AWS Resilience Hub that reports when invocation count is anomalous with band width 2",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-06T14:03:52.861000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Thresholds Crossed: 3 out of the last 3 datapoints [2.0 (06/12/23 13:59:00), 2.0 (06/12/23 13:54:00), 2.0 (06/12/23 13:49:00)] were not less than the lower thresholds [1.6305638110065555, 1.6303809593780731, 1.6301980254892436] or not greater than the upper thresholds [2.385785050020614, 2.385967901837589, 2.386150835938249] (minimum 1 datapoint for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-06T14:04:41.597+0000\",\"startDate\":\"2023-12-06T13:49:00.000+0000\",\"period\":300,\"recentDatapoints\":[2.0,2.0,2.0],\"recentLowerThresholds\":[1.6301980254892436,1.6303809593780731,1.6305638110065555],\"recentUpperThresholds\":[2.386150835938249,2.385967901837589,2.385785050020614],\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-06T13:59:00.000+0000\",\"value\":2.0,\"threshold\":1.6305638110065555}]}",
+        "StateUpdatedTimestamp": "2023-12-06T14:04:41.600000+00:00",
+        "Dimensions": [],
+        "EvaluationPeriods": 3,
+        "DatapointsToAlarm": 3,
+        "ComparisonOperator": "LessThanLowerOrGreaterThanUpperThreshold",
+        "TreatMissingData": "missing",
+        "Metrics": [
+            {
+                "Id": "ad1",
+                "Expression": "ANOMALY_DETECTION_BAND(m1,2)"
+            },
+            {
+                "Id": "m1",
+                "MetricStat": {
+                    "Metric": {
+                        "Namespace": "AWS/Lambda",
+                        "MetricName": "Invocations",
+                        "Dimensions": [
+                            {
+                                "Name": "FunctionName",
+                                "Value": "friends-capstone-ecs-shared-alb-forward-logs"
+                            }
+                        ]
+                    },
+                    "Period": 300,
+                    "Stat": "Sum"
+                }
+            }
+        ],
+        "ThresholdMetricId": "ad1",
+        "StateTransitionedTimestamp": "2023-12-06T14:04:41.600000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-LambdaAnomalousMemoryDeviationsAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-LambdaAnomalousMemoryDeviationsAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
+        "AlarmDescription": "Alarm by AWS Resilience Hub that reports when average memory growth is anomalous with deviation 5",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-06T14:03:52.774000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "INSUFFICIENT_DATA",
+        "StateReason": "Unchecked: Initial alarm creation",
+        "StateUpdatedTimestamp": "2023-12-06T14:03:52.774000+00:00",
+        "Dimensions": [],
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "ComparisonOperator": "LessThanLowerOrGreaterThanUpperThreshold",
+        "TreatMissingData": "missing",
+        "Metrics": [
+            {
+                "Id": "ad1",
+                "Expression": "ANOMALY_DETECTION_BAND(m1,5)"
+            },
+            {
+                "Id": "m1",
+                "MetricStat": {
+                    "Metric": {
+                        "Namespace": "LambdaInsights",
+                        "MetricName": "memory_utilization",
+                        "Dimensions": [
+                            {
+                                "Name": "function_name",
+                                "Value": "friends-capstone-ecs-shared-alb-forward-logs"
+                            }
+                        ]
+                    },
+                    "Period": 180,
+                    "Stat": "Average"
+                }
+            }
+        ],
+        "ThresholdMetricId": "ad1",
+        "StateTransitionedTimestamp": "2023-12-06T14:03:52.774000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-LambdaAnomalousMemorySoftLimitAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-LambdaAnomalousMemorySoftLimitAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
+        "AlarmDescription": "Alarm by AWS Resilience Hub that reports when memory limit is exceeded with 2000",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-06T14:03:52.978000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "INSUFFICIENT_DATA",
+        "StateReason": "Unchecked: Initial alarm creation",
+        "StateUpdatedTimestamp": "2023-12-06T14:03:52.978000+00:00",
+        "MetricName": "used_memory_max",
+        "Namespace": "LambdaInsights",
+        "Statistic": "Maximum",
+        "Dimensions": [
+            {
+                "Name": "function_name",
+                "Value": "friends-capstone-ecs-shared-alb-forward-logs"
+            }
+        ],
+        "Period": 180,
+        "EvaluationPeriods": 1,
+        "DatapointsToAlarm": 1,
+        "Threshold": 2000.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "missing",
+        "StateTransitionedTimestamp": "2023-12-06T14:03:52.978000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-LambdaErrorsAlarm-2020-07-13_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-LambdaErrorsAlarm-2020-07-13_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
+        "AlarmDescription": "Alarm by AWS Resilience Hub that reports when sustained errors occur",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-06T14:03:52.958000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: 1 out of the last 3 datapoints [0.0 (07/12/23 13:10:00)] was not greater than the threshold (0.0) (minimum 1 datapoint for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-07T13:11:39.325+0000\",\"startDate\":\"2023-12-07T13:10:00.000+0000\",\"statistic\":\"Maximum\",\"period\":60,\"recentDatapoints\":[0.0],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-07T13:10:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0}]}",
+        "StateUpdatedTimestamp": "2023-12-07T13:11:39.327000+00:00",
+        "MetricName": "Errors",
+        "Namespace": "AWS/Lambda",
+        "Statistic": "Maximum",
+        "Dimensions": [
+            {
+                "Name": "FunctionName",
+                "Value": "friends-capstone-ecs-shared-alb-forward-logs"
+            }
+        ],
+        "Period": 60,
+        "EvaluationPeriods": 3,
+        "DatapointsToAlarm": 3,
+        "Threshold": 0.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "missing",
+        "StateTransitionedTimestamp": "2023-12-07T13:11:39.327000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-LambdaThrottlesAlarm-2020-07-13_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-LambdaThrottlesAlarm-2020-07-13_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
+        "AlarmDescription": "Alarm by AWS Resilience Hub that reports when sustained throttles occur",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-06T14:03:53.193000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: 1 out of the last 3 datapoints [0.0 (07/12/23 13:10:00)] was not greater than the threshold (0.0) and 2 missing datapoints were treated as [Breaching] (minimum 1 datapoint for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-07T13:11:34.408+0000\",\"startDate\":\"2023-12-07T13:10:00.000+0000\",\"statistic\":\"Maximum\",\"period\":60,\"recentDatapoints\":[0.0],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-07T13:10:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0}]}",
+        "StateUpdatedTimestamp": "2023-12-07T13:11:34.411000+00:00",
+        "MetricName": "Throttles",
+        "Namespace": "AWS/Lambda",
+        "Statistic": "Maximum",
+        "Dimensions": [
+            {
+                "Name": "FunctionName",
+                "Value": "friends-capstone-ecs-shared-alb-forward-logs"
+            }
+        ],
+        "Period": 60,
+        "EvaluationPeriods": 3,
+        "DatapointsToAlarm": 3,
+        "Threshold": 0.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "breaching",
+        "StateTransitionedTimestamp": "2023-12-07T13:11:34.411000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-NatGwPacketsDropsAlarm-2020-04-01_friends-capstone-resilience-hub_nat-01302d06394a50f24",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-NatGwPacketsDropsAlarm-2020-04-01_friends-capstone-resilience-hub_nat-01302d06394a50f24",
+        "AlarmDescription": "The number of packets dropped by the NAT gateway. A value greater than zero may indicate an ongoing transient\nissue with the NAT Gateway\n",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-07T12:42:32.998000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: 5 out of the last 5 datapoints were not greater than the threshold (0.0). The most recent datapoints which not crossed the threshold: [0.0 (07/12/23 12:41:00), 0.0 (07/12/23 12:40:00), 0.0 (07/12/23 12:39:00), 0.0 (07/12/23 12:38:00), 0.0 (07/12/23 12:37:00)] (minimum 3 datapoints for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-07T12:43:35.834+0000\",\"startDate\":\"2023-12-07T12:37:00.000+0000\",\"statistic\":\"Sum\",\"period\":60,\"recentDatapoints\":[0.0,0.0,0.0,0.0,0.0],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-07T12:41:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0},{\"timestamp\":\"2023-12-07T12:40:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0},{\"timestamp\":\"2023-12-07T12:39:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0}]}",
+        "StateUpdatedTimestamp": "2023-12-07T12:43:35.836000+00:00",
+        "MetricName": "PacketsDropCount",
+        "Namespace": "AWS/NATGateway",
+        "Statistic": "Sum",
+        "Dimensions": [
+            {
+                "Name": "NatGatewayId",
+                "Value": "nat-01302d06394a50f24"
+            }
+        ],
+        "Period": 60,
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "Threshold": 0.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "missing",
+        "StateTransitionedTimestamp": "2023-12-07T12:43:35.836000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-NatGwPacketsDropsAlarm-2020-04-01_friends-capstone-resilience-hub_nat-08aa0701bb4771037",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-NatGwPacketsDropsAlarm-2020-04-01_friends-capstone-resilience-hub_nat-08aa0701bb4771037",
+        "AlarmDescription": "The number of packets dropped by the NAT gateway. A value greater than zero may indicate an ongoing transient\nissue with the NAT Gateway\n",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-07T12:42:33.259000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: 5 out of the last 5 datapoints were not greater than the threshold (0.0). The most recent datapoints which not crossed the threshold: [0.0 (07/12/23 12:41:00), 0.0 (07/12/23 12:40:00), 0.0 (07/12/23 12:39:00), 0.0 (07/12/23 12:38:00), 0.0 (07/12/23 12:37:00)] (minimum 3 datapoints for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-07T12:43:29.732+0000\",\"startDate\":\"2023-12-07T12:37:00.000+0000\",\"statistic\":\"Sum\",\"period\":60,\"recentDatapoints\":[0.0,0.0,0.0,0.0,0.0],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-07T12:41:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0},{\"timestamp\":\"2023-12-07T12:40:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0},{\"timestamp\":\"2023-12-07T12:39:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0}]}",
+        "StateUpdatedTimestamp": "2023-12-07T12:43:29.733000+00:00",
+        "MetricName": "PacketsDropCount",
+        "Namespace": "AWS/NATGateway",
+        "Statistic": "Sum",
+        "Dimensions": [
+            {
+                "Name": "NatGatewayId",
+                "Value": "nat-08aa0701bb4771037"
+            }
+        ],
+        "Period": 60,
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "Threshold": 0.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "missing",
+        "StateTransitionedTimestamp": "2023-12-07T12:43:29.733000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-NatGwPortAllocationErrorsAlarm-2020-04-01_friends-capstone-resilience-hub_nat-01302d06394a50f24",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-NatGwPortAllocationErrorsAlarm-2020-04-01_friends-capstone-resilience-hub_nat-01302d06394a50f24",
+        "AlarmDescription": "Alarm by AWS Resilience Hub that indicates that too many concurrent connections are open through the NAT gateway\nand the NAT gateway could not allocate a source port\n",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-07T12:42:33.333000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: 5 out of the last 5 datapoints were not greater than the threshold (0.0). The most recent datapoints which not crossed the threshold: [0.0 (07/12/23 12:42:00), 0.0 (07/12/23 12:41:00), 0.0 (07/12/23 12:40:00), 0.0 (07/12/23 12:39:00), 0.0 (07/12/23 12:38:00)] (minimum 3 datapoints for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-07T12:44:17.314+0000\",\"startDate\":\"2023-12-07T12:38:00.000+0000\",\"statistic\":\"Average\",\"period\":60,\"recentDatapoints\":[0.0,0.0,0.0,0.0,0.0],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-07T12:42:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0},{\"timestamp\":\"2023-12-07T12:41:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0},{\"timestamp\":\"2023-12-07T12:40:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0}]}",
+        "StateUpdatedTimestamp": "2023-12-07T12:44:17.334000+00:00",
+        "MetricName": "ErrorPortAllocation",
+        "Namespace": "AWS/NATGateway",
+        "Statistic": "Average",
+        "Dimensions": [
+            {
+                "Name": "NatGatewayId",
+                "Value": "nat-01302d06394a50f24"
+            }
+        ],
+        "Period": 60,
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "Threshold": 0.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-07T12:44:17.334000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-NatGwPortAllocationErrorsAlarm-2020-04-01_friends-capstone-resilience-hub_nat-08aa0701bb4771037",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-NatGwPortAllocationErrorsAlarm-2020-04-01_friends-capstone-resilience-hub_nat-08aa0701bb4771037",
+        "AlarmDescription": "Alarm by AWS Resilience Hub that indicates that too many concurrent connections are open through the NAT gateway\nand the NAT gateway could not allocate a source port\n",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-07T12:42:32.802000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: 5 out of the last 5 datapoints were not greater than the threshold (0.0). The most recent datapoints which not crossed the threshold: [0.0 (07/12/23 12:42:00), 0.0 (07/12/23 12:41:00), 0.0 (07/12/23 12:40:00), 0.0 (07/12/23 12:39:00), 0.0 (07/12/23 12:38:00)] (minimum 3 datapoints for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-07T12:44:15.824+0000\",\"startDate\":\"2023-12-07T12:38:00.000+0000\",\"statistic\":\"Average\",\"period\":60,\"recentDatapoints\":[0.0,0.0,0.0,0.0,0.0],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-07T12:42:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0},{\"timestamp\":\"2023-12-07T12:41:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0},{\"timestamp\":\"2023-12-07T12:40:00.000+0000\",\"sampleCount\":2.0,\"value\":0.0}]}",
+        "StateUpdatedTimestamp": "2023-12-07T12:44:15.824000+00:00",
+        "MetricName": "ErrorPortAllocation",
+        "Namespace": "AWS/NATGateway",
+        "Statistic": "Average",
+        "Dimensions": [
+            {
+                "Name": "NatGatewayId",
+                "Value": "nat-08aa0701bb4771037"
+            }
+        ],
+        "Period": 60,
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "Threshold": 0.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-07T12:44:15.824000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-NatGwSuccessfulConnectionPercentageAlarm-2020-04-01_friends-capstone-resilience-hub_nat-01302d06394a50f24",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-NatGwSuccessfulConnectionPercentageAlarm-2020-04-01_friends-capstone-resilience-hub_nat-01302d06394a50f24",
+        "AlarmDescription": "Alarm by AWS Resilience Hub that is triggered when ConnectionEstablishedCount is less than the value for\nConnectionAttemptCount, this indicates that clients behind the NAT gateway attempted to establish\nnew connections for which there was no response\n",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-07T12:42:32.818000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: 5 out of the last 5 datapoints were not less than the threshold (50.0). The most recent datapoints which not crossed the threshold: [100.0 (07/12/23 12:41:00), 100.0 (07/12/23 12:40:00), 100.0 (07/12/23 12:39:00), 100.0 (07/12/23 12:38:00), 100.0 (07/12/23 12:37:00)] (minimum 3 datapoints for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-07T12:43:12.513+0000\",\"startDate\":\"2023-12-07T12:37:00.000+0000\",\"period\":60,\"recentDatapoints\":[100.0,100.0,100.0,100.0,100.0],\"threshold\":50.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-07T12:41:00.000+0000\",\"value\":100.0},{\"timestamp\":\"2023-12-07T12:40:00.000+0000\",\"value\":100.0},{\"timestamp\":\"2023-12-07T12:39:00.000+0000\",\"value\":100.0}]}",
+        "StateUpdatedTimestamp": "2023-12-07T12:43:12.514000+00:00",
+        "Dimensions": [],
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "Threshold": 50.0,
+        "ComparisonOperator": "LessThanThreshold",
+        "TreatMissingData": "missing",
+        "Metrics": [
+            {
+                "Id": "m1",
+                "MetricStat": {
+                    "Metric": {
+                        "Namespace": "AWS/NATGateway",
+                        "MetricName": "ConnectionAttemptCount",
+                        "Dimensions": [
+                            {
+                                "Name": "NatGatewayId",
+                                "Value": "nat-01302d06394a50f24"
+                            }
+                        ]
+                    },
+                    "Period": 60,
+                    "Stat": "Sum"
+                },
+                "ReturnData": false
+            },
+            {
+                "Id": "m2",
+                "MetricStat": {
+                    "Metric": {
+                        "Namespace": "AWS/NATGateway",
+                        "MetricName": "ConnectionEstablishedCount",
+                        "Dimensions": [
+                            {
+                                "Name": "NatGatewayId",
+                                "Value": "nat-01302d06394a50f24"
+                            }
+                        ]
+                    },
+                    "Period": 60,
+                    "Stat": "Sum"
+                },
+                "ReturnData": false
+            },
+            {
+                "Id": "successfulConnectionPercentage",
+                "Expression": "(m2/m1)*100"
+            }
+        ],
+        "StateTransitionedTimestamp": "2023-12-07T12:43:12.514000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-NatGwSuccessfulConnectionPercentageAlarm-2020-04-01_friends-capstone-resilience-hub_nat-08aa0701bb4771037",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-NatGwSuccessfulConnectionPercentageAlarm-2020-04-01_friends-capstone-resilience-hub_nat-08aa0701bb4771037",
+        "AlarmDescription": "Alarm by AWS Resilience Hub that is triggered when ConnectionEstablishedCount is less than the value for\nConnectionAttemptCount, this indicates that clients behind the NAT gateway attempted to establish\nnew connections for which there was no response\n",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-07T12:42:32.895000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: 5 out of the last 5 datapoints were not less than the threshold (50.0). The most recent datapoints which not crossed the threshold: [100.0 (07/12/23 12:42:00), 100.0 (07/12/23 12:41:00), 100.0 (07/12/23 12:40:00), 100.0 (07/12/23 12:39:00), 88.88888888888889 (07/12/23 12:38:00)] (minimum 3 datapoints for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-07T12:44:15.859+0000\",\"startDate\":\"2023-12-07T12:38:00.000+0000\",\"period\":60,\"recentDatapoints\":[88.88888888888889,100.0,100.0,100.0,100.0],\"threshold\":50.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-07T12:42:00.000+0000\",\"value\":100.0},{\"timestamp\":\"2023-12-07T12:41:00.000+0000\",\"value\":100.0},{\"timestamp\":\"2023-12-07T12:40:00.000+0000\",\"value\":100.0}]}",
+        "StateUpdatedTimestamp": "2023-12-07T12:44:15.861000+00:00",
+        "Dimensions": [],
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "Threshold": 50.0,
+        "ComparisonOperator": "LessThanThreshold",
+        "TreatMissingData": "missing",
+        "Metrics": [
+            {
+                "Id": "m1",
+                "MetricStat": {
+                    "Metric": {
+                        "Namespace": "AWS/NATGateway",
+                        "MetricName": "ConnectionAttemptCount",
+                        "Dimensions": [
+                            {
+                                "Name": "NatGatewayId",
+                                "Value": "nat-08aa0701bb4771037"
+                            }
+                        ]
+                    },
+                    "Period": 60,
+                    "Stat": "Sum"
+                },
+                "ReturnData": false
+            },
+            {
+                "Id": "m2",
+                "MetricStat": {
+                    "Metric": {
+                        "Namespace": "AWS/NATGateway",
+                        "MetricName": "ConnectionEstablishedCount",
+                        "Dimensions": [
+                            {
+                                "Name": "NatGatewayId",
+                                "Value": "nat-08aa0701bb4771037"
+                            }
+                        ]
+                    },
+                    "Period": 60,
+                    "Stat": "Sum"
+                },
+                "ReturnData": false
+            },
+            {
+                "Id": "successfulConnectionPercentage",
+                "Expression": "(m2/m1)*100"
+            }
+        ],
+        "StateTransitionedTimestamp": "2023-12-07T12:44:15.861000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-S34xxErrorsAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-ecs-shared-alb-log",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-S34xxErrorsAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-ecs-shared-alb-log",
+        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when the 80th percentile of the datapoints for the S3 metric 4xxErrors is greater than 0.",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-07T12:36:12.171000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: no datapoints were received for 5 periods and 5 missing datapoints were treated as [NonBreaching].",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-07T12:37:30.233+0000\",\"unit\":\"Count\",\"statistic\":\"p80\",\"period\":60,\"recentDatapoints\":[],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-07T12:36:00.000+0000\"},{\"timestamp\":\"2023-12-07T12:35:00.000+0000\"},{\"timestamp\":\"2023-12-07T12:34:00.000+0000\"}]}",
+        "StateUpdatedTimestamp": "2023-12-07T12:37:30.235000+00:00",
+        "MetricName": "4xxErrors",
+        "Namespace": "AWS/S3",
+        "ExtendedStatistic": "p80",
+        "Dimensions": [
+            {
+                "Name": "BucketName",
+                "Value": "friends-capstone-ecs-shared-alb-log"
+            },
+            {
+                "Name": "FilterId",
+                "Value": "friends-capstone-ecs-shared-alb-log-metrics"
+            }
+        ],
+        "Period": 60,
+        "Unit": "Count",
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "Threshold": 0.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-07T12:37:30.235000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-S34xxErrorsAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-infra-s3-website",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-S34xxErrorsAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-infra-s3-website",
+        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when the 80th percentile of the datapoints for the S3 metric 4xxErrors is greater than 0.",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-07T12:36:12.303000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: no datapoints were received for 5 periods and 5 missing datapoints were treated as [NonBreaching].",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-07T12:36:54.946+0000\",\"unit\":\"Count\",\"statistic\":\"p80\",\"period\":60,\"recentDatapoints\":[],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-07T12:35:00.000+0000\"},{\"timestamp\":\"2023-12-07T12:34:00.000+0000\"},{\"timestamp\":\"2023-12-07T12:33:00.000+0000\"}]}",
+        "StateUpdatedTimestamp": "2023-12-07T12:36:54.947000+00:00",
+        "MetricName": "4xxErrors",
+        "Namespace": "AWS/S3",
+        "ExtendedStatistic": "p80",
+        "Dimensions": [
+            {
+                "Name": "BucketName",
+                "Value": "friends-capstone-infra-s3-website"
+            },
+            {
+                "Name": "FilterId",
+                "Value": "friends-capstone-infra-s3-website-metrics"
+            }
+        ],
+        "Period": 60,
+        "Unit": "Count",
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 3,
+        "Threshold": 0.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-07T12:36:54.947000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-S35xxErrorsAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-ecs-shared-alb-log",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-S35xxErrorsAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-ecs-shared-alb-log",
+        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when the 30th percentile of the datapoints for the S3 metric 5xxErrors is greater than 0.",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-07T12:36:12.102000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: no datapoints were received for 1 period and 1 missing datapoint was treated as [NonBreaching].",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-07T12:36:51.101+0000\",\"unit\":\"Count\",\"statistic\":\"p30\",\"period\":60,\"recentDatapoints\":[],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-07T12:35:00.000+0000\"}]}",
+        "StateUpdatedTimestamp": "2023-12-07T12:36:51.102000+00:00",
+        "MetricName": "5xxErrors",
+        "Namespace": "AWS/S3",
+        "ExtendedStatistic": "p30",
+        "Dimensions": [
+            {
+                "Name": "BucketName",
+                "Value": "friends-capstone-ecs-shared-alb-log"
+            },
+            {
+                "Name": "FilterId",
+                "Value": "friends-capstone-ecs-shared-alb-log-metrics"
+            }
+        ],
+        "Period": 60,
+        "Unit": "Count",
+        "EvaluationPeriods": 1,
+        "DatapointsToAlarm": 1,
+        "Threshold": 0.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-07T12:36:51.102000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-S35xxErrorsAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-infra-s3-website",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-S35xxErrorsAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-infra-s3-website",
+        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when the 30th percentile of the datapoints for the S3 metric 5xxErrors is greater than 0.",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-07T12:36:12.090000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: no datapoints were received for 1 period and 1 missing datapoint was treated as [NonBreaching].",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-07T12:36:42.724+0000\",\"unit\":\"Count\",\"statistic\":\"p30\",\"period\":60,\"recentDatapoints\":[],\"threshold\":0.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-07T12:35:00.000+0000\"}]}",
+        "StateUpdatedTimestamp": "2023-12-07T12:36:42.726000+00:00",
+        "MetricName": "5xxErrors",
+        "Namespace": "AWS/S3",
+        "ExtendedStatistic": "p30",
+        "Dimensions": [
+            {
+                "Name": "BucketName",
+                "Value": "friends-capstone-infra-s3-website"
+            },
+            {
+                "Name": "FilterId",
+                "Value": "friends-capstone-infra-s3-website-metrics"
+            }
+        ],
+        "Period": 60,
+        "Unit": "Count",
+        "EvaluationPeriods": 1,
+        "DatapointsToAlarm": 1,
+        "Threshold": 0.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-07T12:36:42.726000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-S3TotalRequestLatencyAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-ecs-shared-alb-log",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-S3TotalRequestLatencyAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-ecs-shared-alb-log",
+        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when TotalRequestLatency is over 2000 milliseconds.",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-07T12:36:12.016000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "INSUFFICIENT_DATA",
+        "StateReason": "Unchecked: Initial alarm creation",
+        "StateUpdatedTimestamp": "2023-12-07T12:36:12.016000+00:00",
+        "MetricName": "TotalRequestLatency",
+        "Namespace": "AWS/S3",
+        "Statistic": "Maximum",
+        "Dimensions": [
+            {
+                "Name": "BucketName",
+                "Value": "friends-capstone-ecs-shared-alb-log"
+            },
+            {
+                "Name": "FilterId",
+                "Value": "friends-capstone-ecs-shared-alb-log-metrics"
+            }
+        ],
+        "Period": 60,
+        "Unit": "Milliseconds",
+        "EvaluationPeriods": 1,
+        "DatapointsToAlarm": 1,
+        "Threshold": 2000.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "missing",
+        "StateTransitionedTimestamp": "2023-12-07T12:36:12.016000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-S3TotalRequestLatencyAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-infra-s3-website",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-S3TotalRequestLatencyAlarm-2020-04-01_friends-capstone-resilience-hub_friends-capstone-infra-s3-website",
+        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when TotalRequestLatency is over 2000 milliseconds.",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-07T12:36:12.217000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "INSUFFICIENT_DATA",
+        "StateReason": "Unchecked: Initial alarm creation",
+        "StateUpdatedTimestamp": "2023-12-07T12:36:12.217000+00:00",
+        "MetricName": "TotalRequestLatency",
+        "Namespace": "AWS/S3",
+        "Statistic": "Maximum",
+        "Dimensions": [
+            {
+                "Name": "BucketName",
+                "Value": "friends-capstone-infra-s3-website"
+            },
+            {
+                "Name": "FilterId",
+                "Value": "friends-capstone-infra-s3-website-metrics"
+            }
+        ],
+        "Period": 60,
+        "Unit": "Milliseconds",
+        "EvaluationPeriods": 1,
+        "DatapointsToAlarm": 1,
+        "Threshold": 2000.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "missing",
+        "StateTransitionedTimestamp": "2023-12-07T12:36:12.217000+00:00"
+    },
+    {
+        "AlarmName": "AWSResilienceHub-SyntheticCanaryInRegionAlarm-2021-04-01_friends-capstone-resilience-hub_us-west-2",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:AWSResilienceHub-SyntheticCanaryInRegionAlarm-2021-04-01_friends-capstone-resilience-hub_us-west-2",
+        "AlarmDescription": "Alarm by AWS Resilience Hub that is triggered when synthetic canary SuccessPercent drops below 100%",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-07T12:53:56.349000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "INSUFFICIENT_DATA",
+        "StateReason": "Insufficient Data: 3 datapoints were unknown.",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-07T12:58:18.651+0000\",\"unit\":\"Percent\",\"statistic\":\"Average\",\"period\":60,\"recentDatapoints\":[],\"threshold\":100.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-07T12:57:00.000+0000\"},{\"timestamp\":\"2023-12-07T12:56:00.000+0000\"}]}",
+        "StateUpdatedTimestamp": "2023-12-07T12:58:18.656000+00:00",
+        "MetricName": "SuccessPercent",
+        "Namespace": "CloudWatchSynthetics",
+        "Statistic": "Average",
+        "Dimensions": [
+            {
+                "Name": "CanaryName",
+                "Value": "friends-capstone-synthetic-canary"
+            }
+        ],
+        "Period": 60,
+        "Unit": "Percent",
+        "EvaluationPeriods": 3,
+        "DatapointsToAlarm": 2,
+        "Threshold": 100.0,
+        "ComparisonOperator": "LessThanThreshold",
+        "TreatMissingData": "missing",
+        "StateTransitionedTimestamp": "2023-12-07T12:58:18.656000+00:00"
+    },
+    {
+        "AlarmName": "friends-capstone-summary-ECS-Card CRUD APIs-CPUUtilization",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:friends-capstone-summary-ECS-Card CRUD APIs-CPUUtilization",
+        "AlarmDescription": "This alarm helps you detect a high CPU utilization of the ECS service. If there is no ongoing ECS deployment, a maxed-out CPU utilization might indicate a resource bottleneck or application performance problems. To troubleshoot, you can increase the CPU limit.",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-09T02:39:22.467000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack",
+            "arn:aws:sns:us-west-2:255945442255:Default_CloudWatch_Alarms_Topic"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: no datapoints were received for 5 periods and 5 missing datapoints were treated as [NonBreaching].",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-09T02:40:42.257+0000\",\"statistic\":\"Average\",\"period\":300,\"recentDatapoints\":[],\"threshold\":90.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-09T02:35:00.000+0000\"}]}",
+        "StateUpdatedTimestamp": "2023-12-09T02:40:42.259000+00:00",
+        "MetricName": "friends-capstone-summary-ECS-Card CRUD APIs-CPUUtilization",
+        "Namespace": "AWS/ECS",
+        "Statistic": "Average",
+        "Dimensions": [
+            {
+                "Name": "ServiceName",
+                "Value": "friends-capstone-crud-api-service"
+            },
+            {
+                "Name": "ClusterName",
+                "Value": "friends-capstone-cluster"
+            }
+        ],
+        "Period": 300,
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 5,
+        "Threshold": 90.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-09T02:40:42.259000+00:00"
+    },
+    {
+        "AlarmName": "friends-capstone-summary-ECS-Card CRUD APIs-MemoryUtilization",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:friends-capstone-summary-ECS-Card CRUD APIs-MemoryUtilization",
+        "AlarmDescription": "This alarm is triggered when the memory utilization of the system falls below a predefined threshold.",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-03T09:17:34.834000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack",
+            "arn:aws:sns:us-west-2:255945442255:Default_CloudWatch_Alarms_Topic"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "Threshold Crossed: no datapoints were received for 1 period and 1 missing datapoint was treated as [NonBreaching].",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-03T09:18:14.724+0000\",\"statistic\":\"Average\",\"period\":21600,\"recentDatapoints\":[],\"threshold\":10.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-03T03:18:00.000+0000\"}]}",
+        "StateUpdatedTimestamp": "2023-12-03T09:18:14.725000+00:00",
+        "MetricName": "friends-capstone-summary-ECS-Card CRUD APIs-MemoryUtilization",
+        "Namespace": ".",
+        "Statistic": "Average",
+        "Dimensions": [
+            {
+                "Name": ".",
+                "Value": "."
+            }
+        ],
+        "Period": 21600,
+        "EvaluationPeriods": 1,
+        "DatapointsToAlarm": 1,
+        "Threshold": 10.0,
+        "ComparisonOperator": "LessThanThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-03T09:18:14.725000+00:00"
+    },
+    {
+        "AlarmName": "friends-capstone-summary-RDS-CPUUtilization",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:friends-capstone-summary-RDS-CPUUtilization",
+        "AlarmDescription": "This alarm helps to monitor consistent high CPU utilization. CPU utilization measures non-idle time. Consider using [Enhanced Monitoring](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.OS.Enabling.html) or [Performance Insights](https://aws.amazon.com/rds/performance-insights/) to review which [wait time](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring-Available-OS-Metrics.html) is consuming the most of the CPU time (`guest`, `irq`, `wait`, `nice`, etc) for MariaDB, MySQL, Oracle, and PostgreSQL. Then evaluate which queries consume the highest amount of CPU. If you cannot tune your workload, consider moving to a larger DB instance class.",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-03T09:08:25.572000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:Default_CloudWatch_Alarms_Topic",
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "OK",
+        "StateReason": "TEST",
+        "StateUpdatedTimestamp": "2023-12-05T13:03:26.197000+00:00",
+        "MetricName": "friends-capstone-summary-RDS-CPUUtilization",
+        "Namespace": "AWS/RDS",
+        "Statistic": "Average",
+        "Dimensions": [
+            {
+                "Name": "DBInstanceIdentifier",
+                "Value": "friendscapstonerds"
+            }
+        ],
+        "Period": 300,
+        "EvaluationPeriods": 5,
+        "DatapointsToAlarm": 5,
+        "Threshold": 90.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "notBreaching",
+        "StateTransitionedTimestamp": "2023-12-05T13:03:26.197000+00:00"
+    },
+    {
+        "AlarmName": "friends-capstone-summary-WAF-BlockedRequests",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:friends-capstone-summary-WAF-BlockedRequests",
+        "AlarmDescription": "This alarm is triggered when the Web Application Firewall (WAF) blocks an elevated number of requests, indicating potential malicious activity or unwanted traffic attempting to access the application.",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-03T09:34:39.758000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:Default_CloudWatch_Alarms_Topic",
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "INSUFFICIENT_DATA",
+        "StateReason": "Unchecked: Initial alarm creation",
+        "StateUpdatedTimestamp": "2023-12-03T09:34:39.758000+00:00",
+        "MetricName": "friends-capstone-summary-WAF-BlockedRequests",
+        "Namespace": ".",
+        "Statistic": "Average",
+        "Dimensions": [
+            {
+                "Name": ".",
+                "Value": "."
+            }
+        ],
+        "Period": 300,
+        "EvaluationPeriods": 1,
+        "DatapointsToAlarm": 1,
+        "Threshold": 10.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "missing",
+        "StateTransitionedTimestamp": "2023-12-03T09:34:39.758000+00:00"
+    }
+]
