@@ -263,9 +263,9 @@
         ],
         "InsufficientDataActions": [],
         "StateValue": "OK",
-        "StateReason": "Thresholds Crossed: 3 out of the last 3 datapoints [2.0 (06/12/23 13:59:00), 2.0 (06/12/23 13:54:00), 2.0 (06/12/23 13:49:00)] were not less than the lower thresholds [1.6305638110065555, 1.6303809593780731, 1.6301980254892436] or not greater than the upper thresholds [2.385785050020614, 2.385967901837589, 2.386150835938249] (minimum 1 datapoint for ALARM -> OK transition).",
-        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-06T14:04:41.597+0000\",\"startDate\":\"2023-12-06T13:49:00.000+0000\",\"period\":300,\"recentDatapoints\":[2.0,2.0,2.0],\"recentLowerThresholds\":[1.6301980254892436,1.6303809593780731,1.6305638110065555],\"recentUpperThresholds\":[2.386150835938249,2.385967901837589,2.385785050020614],\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-06T13:59:00.000+0000\",\"value\":2.0,\"threshold\":1.6305638110065555}]}",
-        "StateUpdatedTimestamp": "2023-12-06T14:04:41.600000+00:00",
+        "StateReason": "Thresholds Crossed: 1 out of the last 3 datapoints [2.0 (09/12/23 13:41:00)] was not less than the lower thresholds [1.9864448481500885] or not greater than the upper thresholds [2.4829125480173815] (minimum 1 datapoint for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-09T13:46:41.596+0000\",\"startDate\":\"2023-12-09T13:31:00.000+0000\",\"period\":300,\"recentDatapoints\":[2.0,2.0,2.0],\"recentLowerThresholds\":[2.0194454705753904,2.0133546286556534,1.9864448481500885],\"recentUpperThresholds\":[2.516399384091881,2.5100653761111227,2.4829125480173815],\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-09T13:41:00.000+0000\",\"value\":2.0,\"threshold\":1.9864448481500885}]}",
+        "StateUpdatedTimestamp": "2023-12-09T13:46:41.598000+00:00",
         "Dimensions": [],
         "EvaluationPeriods": 3,
         "DatapointsToAlarm": 3,
@@ -295,7 +295,7 @@
             }
         ],
         "ThresholdMetricId": "ad1",
-        "StateTransitionedTimestamp": "2023-12-06T14:04:41.600000+00:00"
+        "StateTransitionedTimestamp": "2023-12-09T13:46:41.598000+00:00"
     },
     {
         "AlarmName": "AWSResilienceHub-LambdaAnomalousMemoryDeviationsAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
