@@ -2,6 +2,9 @@ name: Deploy/Teardown Cloudwatch Alarms
 
 on:
   push:
+  schedule:
+    - cron: "0 18 * * *" # daily at SGT 2am / UTC 6pm
+  
   # workflow_dispatch:
   #   inputs:
   #     deployment:
