@@ -32,6 +32,14 @@ jobs:
       - name: run script
         run: ./backup.sh
 
+      - name: commit json if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: backup alarms
+          file_pattern: '*.json'
+          repository: .
+          push_options: '--force'
+
       # - uses: hashicorp/setup-terraform@v2
 
       # - run: terraform init
