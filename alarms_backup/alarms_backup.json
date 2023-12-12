@@ -217,9 +217,9 @@
         ],
         "InsufficientDataActions": [],
         "StateValue": "OK",
-        "StateReason": "Thresholds Crossed: 2 out of the last 5 datapoints [735.515 (10/12/23 08:04:00), 713.67 (10/12/23 07:49:00)] were not less than the lower thresholds [0.0, 0.0] or not greater than the upper thresholds [961.1139939797037, 960.6794493089606] (minimum 3 datapoints for ALARM -> OK transition).",
-        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-10T08:10:06.655+0000\",\"startDate\":\"2023-12-10T07:49:00.000+0000\",\"period\":180,\"recentDatapoints\":[713.67,null,1377.6799999999998,963.54,null,735.515],\"recentLowerThresholds\":[0.0,null,0.0,0.0,null,0.0],\"recentUpperThresholds\":[960.6794493089606,null,961.1139939797037,961.1139939797037,null,961.1139939797037],\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-10T08:07:00.000+0000\"},{\"timestamp\":\"2023-12-10T08:04:00.000+0000\",\"value\":735.515,\"threshold\":961.1139939797037},{\"timestamp\":\"2023-12-10T07:49:00.000+0000\",\"value\":713.67,\"threshold\":960.6794493089606}]}",
-        "StateUpdatedTimestamp": "2023-12-10T08:10:06.658000+00:00",
+        "StateReason": "Thresholds Crossed: 2 out of the last 5 datapoints [639.405 (12/12/23 07:59:00), 603.775 (12/12/23 07:53:00)] were not less than the lower thresholds [0.0, 0.0] or not greater than the upper thresholds [943.1082307213917, 943.3316533897842] (minimum 3 datapoints for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-12T08:05:06.661+0000\",\"startDate\":\"2023-12-12T07:44:00.000+0000\",\"period\":180,\"recentDatapoints\":[1382.8899999999999,null,1004.515,603.775,null,639.405],\"recentLowerThresholds\":[0.0,null,0.0,0.0,null,0.0],\"recentUpperThresholds\":[943.4465541692407,null,943.3316533897846,943.3316533897842,null,943.1082307213917],\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-12T08:02:00.000+0000\"},{\"timestamp\":\"2023-12-12T07:59:00.000+0000\",\"value\":639.405,\"threshold\":943.1082307213917},{\"timestamp\":\"2023-12-12T07:53:00.000+0000\",\"value\":603.775,\"threshold\":943.3316533897842}]}",
+        "StateUpdatedTimestamp": "2023-12-12T08:05:06.662000+00:00",
         "Dimensions": [],
         "EvaluationPeriods": 5,
         "DatapointsToAlarm": 3,
@@ -249,7 +249,7 @@
             }
         ],
         "ThresholdMetricId": "ad1",
-        "StateTransitionedTimestamp": "2023-12-10T08:10:06.658000+00:00"
+        "StateTransitionedTimestamp": "2023-12-12T08:05:06.662000+00:00"
     },
     {
         "AlarmName": "AWSResilienceHub-LambdaAnomalousInvocationCountAlarm-2020-07-13_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
@@ -263,9 +263,9 @@
         ],
         "InsufficientDataActions": [],
         "StateValue": "OK",
-        "StateReason": "Thresholds Crossed: 1 out of the last 3 datapoints [2.0 (09/12/23 13:41:00)] was not less than the lower thresholds [1.9864448481500885] or not greater than the upper thresholds [2.4829125480173815] (minimum 1 datapoint for ALARM -> OK transition).",
-        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-09T13:46:41.596+0000\",\"startDate\":\"2023-12-09T13:31:00.000+0000\",\"period\":300,\"recentDatapoints\":[2.0,2.0,2.0],\"recentLowerThresholds\":[2.0194454705753904,2.0133546286556534,1.9864448481500885],\"recentUpperThresholds\":[2.516399384091881,2.5100653761111227,2.4829125480173815],\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-09T13:41:00.000+0000\",\"value\":2.0,\"threshold\":1.9864448481500885}]}",
-        "StateUpdatedTimestamp": "2023-12-09T13:46:41.598000+00:00",
+        "StateReason": "Thresholds Crossed: 1 out of the last 3 datapoints [2.0 (12/12/23 17:11:00)] was not less than the lower thresholds [1.6920443817632758] or not greater than the upper thresholds [2.0109169847886617] (minimum 1 datapoint for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-12T17:16:41.588+0000\",\"startDate\":\"2023-12-12T17:01:00.000+0000\",\"period\":300,\"recentDatapoints\":[2.0,2.0,2.0],\"recentLowerThresholds\":[1.650686354796296,1.6725663474262835,1.6920443817632758],\"recentUpperThresholds\":[1.9698705696945031,1.9915947178611226,2.0109169847886617],\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-12T17:11:00.000+0000\",\"value\":2.0,\"threshold\":2.0109169847886617}]}",
+        "StateUpdatedTimestamp": "2023-12-12T17:16:41.589000+00:00",
         "Dimensions": [],
         "EvaluationPeriods": 3,
         "DatapointsToAlarm": 3,
@@ -295,7 +295,7 @@
             }
         ],
         "ThresholdMetricId": "ad1",
-        "StateTransitionedTimestamp": "2023-12-09T13:46:41.598000+00:00"
+        "StateTransitionedTimestamp": "2023-12-12T17:16:41.589000+00:00"
     },
     {
         "AlarmName": "AWSResilienceHub-LambdaAnomalousMemoryDeviationsAlarm-2020-04-01_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
