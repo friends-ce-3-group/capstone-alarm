@@ -217,9 +217,9 @@
         ],
         "InsufficientDataActions": [],
         "StateValue": "OK",
-        "StateReason": "Thresholds Crossed: 2 out of the last 5 datapoints [639.405 (12/12/23 07:59:00), 603.775 (12/12/23 07:53:00)] were not less than the lower thresholds [0.0, 0.0] or not greater than the upper thresholds [943.1082307213917, 943.3316533897842] (minimum 3 datapoints for ALARM -> OK transition).",
-        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-12T08:05:06.661+0000\",\"startDate\":\"2023-12-12T07:44:00.000+0000\",\"period\":180,\"recentDatapoints\":[1382.8899999999999,null,1004.515,603.775,null,639.405],\"recentLowerThresholds\":[0.0,null,0.0,0.0,null,0.0],\"recentUpperThresholds\":[943.4465541692407,null,943.3316533897846,943.3316533897842,null,943.1082307213917],\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-12T08:02:00.000+0000\"},{\"timestamp\":\"2023-12-12T07:59:00.000+0000\",\"value\":639.405,\"threshold\":943.1082307213917},{\"timestamp\":\"2023-12-12T07:53:00.000+0000\",\"value\":603.775,\"threshold\":943.3316533897842}]}",
-        "StateUpdatedTimestamp": "2023-12-12T08:05:06.662000+00:00",
+        "StateReason": "Thresholds Crossed: 2 out of the last 5 datapoints [595.47 (15/12/23 14:23:00), 428.25 (15/12/23 14:20:00)] were not less than the lower thresholds [9.852225395739506, 9.810612896104425] or not greater than the upper thresholds [893.7176015026644, 893.8092888161129] (minimum 3 datapoints for ALARM -> OK transition).",
+        "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2023-12-15T14:35:53.577+0000\",\"startDate\":\"2023-12-15T14:14:00.000+0000\",\"period\":180,\"recentDatapoints\":[926.18,null,428.25,595.47,null,1386.24],\"recentLowerThresholds\":[9.75971047111695,null,9.810612896104425,9.852225395739506,null,9.93292914217525],\"recentUpperThresholds\":[893.9217377465563,null,893.8092888161129,893.7176015026644,null,893.540389989857],\"evaluatedDatapoints\":[{\"timestamp\":\"2023-12-15T14:32:00.000+0000\"},{\"timestamp\":\"2023-12-15T14:23:00.000+0000\",\"value\":595.47,\"threshold\":893.7176015026644},{\"timestamp\":\"2023-12-15T14:20:00.000+0000\",\"value\":428.25,\"threshold\":9.810612896104425}]}",
+        "StateUpdatedTimestamp": "2023-12-15T14:35:53.580000+00:00",
         "Dimensions": [],
         "EvaluationPeriods": 5,
         "DatapointsToAlarm": 3,
@@ -249,7 +249,7 @@
             }
         ],
         "ThresholdMetricId": "ad1",
-        "StateTransitionedTimestamp": "2023-12-12T08:05:06.662000+00:00"
+        "StateTransitionedTimestamp": "2023-12-15T14:35:53.580000+00:00"
     },
     {
         "AlarmName": "AWSResilienceHub-LambdaAnomalousInvocationCountAlarm-2020-07-13_friends-capstone-resilience-hub_arn-aws-lambda-us-west-2-255945442255-function-friends-capstone-ecs-shared-alb-forward-logs",
@@ -947,6 +947,37 @@
         "ComparisonOperator": "LessThanThreshold",
         "TreatMissingData": "missing",
         "StateTransitionedTimestamp": "2023-12-07T12:58:18.656000+00:00"
+    },
+    {
+        "AlarmName": "friends-capstone-notification-lambda-Error",
+        "AlarmArn": "arn:aws:cloudwatch:us-west-2:255945442255:alarm:friends-capstone-notification-lambda-Error",
+        "AlarmConfigurationUpdatedTimestamp": "2023-12-15T13:52:36.513000+00:00",
+        "ActionsEnabled": true,
+        "OKActions": [],
+        "AlarmActions": [
+            "arn:aws:sns:us-west-2:255945442255:friends-capstone-alarm-slack",
+            "arn:aws:sns:us-west-2:255945442255:Default_CloudWatch_Alarms_Topic"
+        ],
+        "InsufficientDataActions": [],
+        "StateValue": "INSUFFICIENT_DATA",
+        "StateReason": "Unchecked: Initial alarm creation",
+        "StateUpdatedTimestamp": "2023-12-15T12:12:55.228000+00:00",
+        "MetricName": "friends-capstone-notification-lambda-Errors",
+        "Namespace": "AWS/Lambda",
+        "Statistic": "Sum",
+        "Dimensions": [
+            {
+                "Name": "FunctionName",
+                "Value": "friends-capstone-notification-lambda"
+            }
+        ],
+        "Period": 21600,
+        "EvaluationPeriods": 1,
+        "DatapointsToAlarm": 1,
+        "Threshold": 1.0,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "TreatMissingData": "missing",
+        "StateTransitionedTimestamp": "2023-12-15T12:12:55.228000+00:00"
     },
     {
         "AlarmName": "friends-capstone-summary-ECS-Card CRUD APIs-CPUUtilization",
